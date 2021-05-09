@@ -23,7 +23,7 @@ class Register extends React.Component {
     }
 
     onSubmitSignIn = () => {
-        fetch('http://localhost:3000/register', {
+        fetch('https://infinite-hamlet-86368.herokuapp.com/register', {
             method: 'post',
             headers: {
                 'Content-Type': "application/json"
@@ -85,7 +85,7 @@ class Register extends React.Component {
                         <input 
                             onClick= {this.onSubmitSignIn}
                             className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" 
-                            type="submit" 
+                            type="button" 
                             value="Register"/>
                     </div>
                 </form>
